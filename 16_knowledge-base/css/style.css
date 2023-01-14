@@ -1,0 +1,404 @@
+@font-face {
+  font-family: 'OpenSans';
+  src: local('OpenSans-Regular'),
+    url('../fonts/OpenSansRegular.woff2') format('woff2'),
+    url('../fonts/OpenSansRegular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'OpenSans';
+  src: local('OpenSans-SemiBold'),
+    url('../fonts/OpenSansSemiBold.woff2') format('woff2'),
+    url('../fonts/OpenSansSemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/**
+    * Reinstate scrolling for non-JS clients
+    */
+.simplebar-content-wrapper {
+  overflow: auto;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 400;
+  color: #333;
+}
+
+/* Globe */
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.content {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 70px;
+  padding-left: 92px;
+  width: 2678px;
+  min-height: 640px;
+
+  background: #424242;
+
+}
+
+/* check */
+.check {
+  flex-direction: column;
+  width: 176px;
+  min-height: 309px;
+  padding-top: 20px;
+  padding-left: 30px;
+  margin-right: 58px;
+  background-color: #fff;
+  border-radius: 10px;
+
+
+}
+
+.check__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #333333;
+}
+
+.check__list {
+  flex-direction: column;
+  margin-bottom: 29px;
+}
+
+.check__item {}
+
+.check__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+
+.check__item .item__label {
+  position: relative;
+  padding-left: 24px;
+}
+
+.check__item .item__ckeckbox {
+  display: none;
+}
+
+.check__item .item__ckeckbox+span {
+  margin: 0;
+  position: absolute;
+  top: 1.5px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #CCB26E;
+  border-radius: 3px;
+}
+
+.check__item .item__ckeckbox+span::before {
+  content: url(../img/Rectangle\ 99.svg);
+  position: absolute;
+  bottom: -1px;
+  left: 3px;
+  /* right: 0;
+  bottom: 0; */
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+
+.check__item .item__ckeckbox:checked+span::before {
+  opacity: 1;
+}
+
+/* section */
+.selection {
+  width: 176px;
+  margin-right: 50px;
+}
+
+.choices {
+  display: flex;
+  align-items: center;
+  width: 176px;
+  height: 39px;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+
+.is-focused {
+  display: flex;
+  align-items: center;
+  width: 176px;
+  height: 39px;
+  background: #FFFFFF;
+  border: 1px solid #CCB26E;
+  border-radius: 10px;
+
+}
+
+.is-active {
+  display: flex;
+  align-items: center;
+  width: 176px;
+  /* height: 39px; */
+  background: #FFFFFF;
+  border-radius: 10px;
+  border: 1px solid #CCB26E;
+}
+
+.choices[data-type*=select-one]::after {
+  content: '';
+  width: 15px;
+  height: 8px;
+  background: url('../img/Rectangle 141.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+
+.is-open.choices[data-type*=select-one]::after {
+  content: '';
+
+  width: 15px;
+  height: 8px;
+  background: url('../img/Rectangle 141.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  transform: rotate(180deg);
+}
+
+.choices__inner {
+  display: flex;
+  align-items: center;
+  width: 176px;
+  /* height: 39px; */
+  background: #FFFFFF;
+  border-radius: 10px;
+  border: 1px solid #CCB26E;
+}
+.choices__list--dropdown {
+  border-radius: 10px;
+  border: 1px solid #CCB26E;
+}
+/* map */
+.map {
+  margin: 0;
+  margin-right: 58px;
+  display: none;
+}
+
+.map__block {
+  width: 460px;
+  height: 460px;
+}
+
+[class*="ground-pane"] {
+  filter: grayscale();
+}
+
+
+.text__block {
+  width: 399px;
+  height: 310px;
+  font-weight: 400;
+  font-size: 14px;
+  background: #FFFFFF;
+  overflow-y: auto;
+}
+
+.text {
+  margin-right: 58px;
+}
+
+.text .simplebar-scrollbar::before {
+  background-color: #CCB26E;
+
+}
+
+/* pools */
+.pools {
+  margin-right: 58px;
+
+}
+
+.pools__form {
+  align-items: flex-start;
+  flex-direction: column;
+  width: 440px;
+  padding: 38px 30px;
+  background: #0000008a;
+
+  border-radius: 10px;
+}
+
+.pools .form__input {
+  width: 380px;
+  height: 60px;
+  padding-left: 29px;
+  font-size: 16px;
+  line-height: 19px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  opacity: none;
+
+}
+
+.pools .form__block:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.pools .form__block:last-child {
+  margin-bottom: 31px;
+}
+
+
+.pools .form__block {
+  justify-content: space-between;
+  height: 77px;
+  flex-direction: column-reverse;
+  /* padding-top: 18px; */
+  position: relative;
+}
+
+.pools .js-validate-error-label {
+  /* position: absolute; */
+  top: 0;
+  padding-left: 20px;
+  font-size: 12px;
+  line-height: 14px;
+
+
+}
+
+.pools .form__btn {
+  min-width: 192px;
+  min-height: 60px;
+  left: 1799px;
+  top: 381px;
+  cursor: pointer;
+  background: #FF5C00;
+  border-radius: 10px;
+  color: #FFFFFF;
+
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.pools .form__input::-webkit-input-placeholder {
+  color: #999999;
+
+
+
+}
+
+
+/* Tooltip */
+
+.tooltip__text {
+  width: 375px;
+  padding: 20px 29px;
+
+
+  background: #FFFFFF;
+}
+
+.tooltip__text:not(last-child) {
+  margin-bottom: 29px;
+}
+
+.tooltip__paragtaph {
+  font-size: 14px;
+  line-height: 170%;
+  display: inline;
+}
+
+.tooltip__body {
+  display: inline-block;
+  position: relative;
+  flex-direction: column;
+  width: 16px;
+  align-items: center;
+  justify-self: flex-end;
+}
+
+.tooltop__trigger svg {
+  fill: rgb(179, 179, 179);
+}
+
+.tooltip__popup {
+
+  display: none;
+  top: -44px;
+  right: -74px;
+  position: absolute;
+  width: 163px;
+  min-height: 37.5px;
+  padding: 7px 15px 20px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  /* background: #424242; */
+  background-position: bottom center;
+  background-image: url('../img/tooltio__bg.png');
+  color: #FFFFFF;
+
+}
+
+
+.tooltip__body:hover .tooltip__popup {
+  display: block;
+}
+
+.tooltip__body:hover .tooltop__trigger svg {
+  fill: #CCB26E;
+}
+
+.tooltip__body:focus {
+  outline: non;
+}
+
+.tooltip__body:focus .tooltip__popup {
+  display: block;
+}
+
+.tooltip__body:focus .tooltop__trigger svg {
+  fill: #CCB26E;
+}

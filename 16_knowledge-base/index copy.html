@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>База </title>
+
+  <!-- Or versioned -->
+
+
+  <!-- Include Choices CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+
+
+</head>
+
+<body>
+
+  <sector class="selection">
+    <select id="select">
+      <option value="wood">Древесина</option>
+      <option value="metal">Металл</option>
+      <option value="stone">Камень</option>
+      <option value="Ruber">Пластик</option>
+      <option value="Composit">Композинтный</option>
+      <option value="Gyps">Гипс</option>
+    </select>
+  </sector>
+
+
+  <script src="choises/choices.min.js"></script>
+  <script>
+    const element = document.querySelector('#select');
+    const choices = new Choices(element, { searchEnabled: false });
+  </script>
+
+
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>

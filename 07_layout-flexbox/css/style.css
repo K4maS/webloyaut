@@ -1,0 +1,276 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  min-width: 1170px;
+  font-family: 'font', sans-serif;
+}
+
+/* globe */
+.list-style {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  width: 1170px;
+  padding: 0;
+  /* 15px; */
+  margin: 0 auto;
+}
+
+.main-title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding-left: 30px;
+
+}
+
+.header {
+  padding: 30px 0;
+}
+
+.block {
+  margin-top: 70px;
+}
+
+.header-container {
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 40px;
+}
+
+.header-cabinet-link {
+  margin-left: auto;
+}
+
+.header-first-line {
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.header-second-line {
+  justify-content: space-between;
+  padding: 27px 0 27px 45px;
+  outline: solid 1px red;
+}
+
+
+.nav-list {
+  margin-right: auto;
+}
+
+.nav-list-item:not(:last-child) {
+  margin-right: 45px;
+}
+
+.header-buttons {
+  margin-right: 45px;
+}
+
+.nav-button1 {
+  margin-right: 80px;
+}
+
+/* about us */
+
+
+/* special-offers */
+.special-offers-warp {
+  /* justify-content:space-between; */
+  min-height: 540px;
+}
+
+.special-offers-left {
+  flex-direction: column;
+  align-items: center;
+  margin-right: 24px;
+}
+
+.special-offers-card:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.special-offers-card {
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 573px;
+  min-height: 258px;
+  padding: 45px 40px;
+  outline: solid 1px red;
+}
+
+.special-offers-card-header {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.special-offers-card-price {
+  margin-bottom: 47px;
+}
+
+.services-list {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.services-list-item {
+  flex-direction: column;
+  width: 573px;
+  min-height: 330px;
+  margin: 0 24px 24px 0;
+  outline: solid 1px red;
+}
+
+.services-list-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.services-list-item:last-child,
+.services-list-item:nth-last-child(2) {
+  margin-bottom: 0;
+}
+
+.service-card-image {
+  width: 573px;
+  height: 165px;
+  margin-bottom: 26px;
+}
+
+.services-card-btn {
+  margin: 0;
+  padding-left: 45px;
+  margin: 0 126px 10px 0;
+}
+
+.services-text {
+  margin: 0;
+  padding-left: 45px;
+  margin: 0 126px 35px 0;
+}
+
+/* advantages */
+.advantages-list {
+  flex-wrap: wrap;
+}
+
+.advantages-list-item {
+  flex-direction: column;
+  width: 276px;
+  min-height: 276px;
+  margin: 0 22px 22px 0;
+  padding: 40px 0 0 45px;
+  outline: solid 1px red;
+}
+
+.advantages-list-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.advantages-list-item:nth-last-child(4),
+.advantages-list-item:nth-last-child(3),
+.advantages-list-item:nth-last-child(2),
+.advantages-list-item:last-child {
+  margin-bottom: 0;
+}
+
+.advantages-image {
+  margin: 0;
+  min-height: 66px;
+  width: 64px;
+  margin-bottom: 10px;
+}
+
+.advantages-list-item-text {
+  margin: 0 42px 32px 0;
+  line-height: 2;
+}
+
+/* accommodation */
+.accommodation-list {
+  flex-wrap: wrap;
+}
+
+.accommodation-list-item {
+  flex-direction: column;
+  width: 374px;
+  min-height: 440px;
+  margin: 0 24px 24px 0;
+  padding-bottom: 45px;
+  outline: solid red 1px;
+}
+
+.accommodation-list-item:last-child {
+  justify-content: flex-end;
+  padding: 27px 54px;
+}
+
+.accommodation-list-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.accommodation-list-item:nth-last-child(3),
+.accommodation-list-item:nth-last-child(2),
+.accommodation-list-item:last-child {
+  margin-bottom: 0;
+}
+
+.accommodation-list-item-img {
+  margin-bottom: 36px;
+}
+
+.accomodation-ard-wrapper {
+  margin: 0 45px 16px 45px;
+  justify-content: space-between;
+}
+
+.accommodation-list-item-stars {
+  justify-content: space-evenly;
+  width: 94px;
+}
+
+.rating-star:not(:nth-child(5n)) {
+  margin-right: 5px;
+}
+.accommodation-list-item-name {
+  margin: 0 45px 16px 45px;
+}
+
+.accommodation-list-item-location {
+  display: block;
+  margin: 0 45px 16px 45px;
+}
+
+.accommodation-list-item-btn {
+  margin: 0 45px 0 45px;
+}
